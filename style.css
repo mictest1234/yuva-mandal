@@ -47,102 +47,7 @@ body {
 
 #bar-button {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
-}
-
-.year-button {
-  padding-top: 5%;
-  background-image: url(./assets/nb.jpg);
-  font-family: Roboto Condensed, sans-serif;
-  font-size: 25px;
-  text-decoration: none;
-  color: rgba(240, 240, 240, 255);
-}
-
-.head-text {
-  height: 100%;
-  font-family: Merienda, cursive;
-  font-weight: 600;
-  font-size: 80px;
-  color: orangered;
-  text-shadow: 2px 2px 5px black;
-}
-
-#location {
-  width: 100%;
-  height: 100%;
-  background-image: url(./assets/l1.jpg);
-  background-size: cover;
-}
-
-#loc-box {
-  height: 800px;
-  width: 100%;
-  border-radius: 600px;
-  background-color: rgba(240, 248, 255, 0.348);
-  text-align: center;
-  padding-top: 5%;
-}
-
-#siri {
-  font-family: Arvo, serif;
-  font-weight: 600;
-  font-size: 80px;
-  color: rgb(229, 3, 3);
-  text-shadow: 2px 2px 5px black;
-}
-
-#sewak-head {
-  text-align: center;
-  font-family: Yatra One, system-ui;
-  font-size: 70px;
-  color: white;
-  background-color: rgb(255, 108, 108);
-  margin-left: 500px;
-  margin-right: 500px;
-  border-radius: 50px;
-}
-
-.sewak {
-  font-size: 35px;
-  text-align: center;
-  margin: 3%;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
-}
-
-.typewriter h1 {
-  color: #fff;
-  /* font-family: monospace; */
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-  font-family: Roboto Condensed, sans-serif;
-  font-weight: 700;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
 }
 
 #homeimg1 {
@@ -171,6 +76,11 @@ body {
 
 #hometxt2 {
   font-size: 50px;
+}
+
+.break {
+  height: 25px;
+  background-color: black;
 }
 
 #highlights {
@@ -206,6 +116,24 @@ body {
 
 .highimg {
   height: 600px;
+}
+
+.year-button {
+  padding-top: 5%;
+  background-image: url(./assets/nb.jpg);
+  font-family: Roboto Condensed, sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgba(240, 240, 240, 255);
+}
+
+.head-text {
+  height: 100%;
+  font-family: Merienda, cursive;
+  font-weight: 600;
+  font-size: 80px;
+  color: orangered;
+  text-shadow: 2px 2px 5px black;
 }
 
 .glimpses {
@@ -250,6 +178,30 @@ body {
   padding: 6%;
 }
 
+#location {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/l1.jpg);
+  background-size: cover;
+}
+
+#loc-box {
+  height: 800px;
+  width: 100%;
+  border-radius: 600px;
+  background-color: rgba(240, 248, 255, 0.348);
+  text-align: center;
+  padding-top: 5%;
+}
+
+#siri {
+  font-family: Arvo, serif;
+  font-weight: 600;
+  font-size: 80px;
+  color: rgb(229, 3, 3);
+  text-shadow: 2px 2px 5px black;
+}
+
 #siri2 {
   font-family: Arvo, serif;
   font-size: 20px;
@@ -262,21 +214,62 @@ body {
 #loc-box2 {
   margin-top: 50px;
 }
+
+#sewak-head {
+  text-align: center;
+  font-family: Yatra One, system-ui;
+  font-size: 70px;
+  color: white;
+  background-color: rgb(255, 108, 108);
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+}
+
+.sewak {
+  font-size: 35px;
+  text-align: center;
+  margin: 3%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
 #shyam-sewak {
   background-image: url(./assets/sbg.jpg);
   background-size: cover;
 }
 
 .sewak-box {
-  background-color: rgba(212, 231, 247, 0.848);
-  border-radius: 400px;
-  padding-top: 50px;
+  background-color: rgba(212, 231, 247, 0.666);
+  padding: 50px;
   padding-bottom: 50px;
 }
 
-#sewak-box2 {
+#sewak-table-1 {
+  width: 100%;
   text-align: center;
-  color: black;
+  padding: 60px;
+}
+
+#sewak-table-2 {
+  width: 100%;
+  text-align: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  /* font-family: monospace; */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 700;
 }
 
 #contact {
@@ -291,7 +284,29 @@ body {
 }
 
 .row {
+  width: 100%;
   padding: 3% 5%;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .footer {
@@ -327,6 +342,10 @@ body {
   padding-left: 5%;
 }
 
+.creator1 {
+  color: white;
+}
+
 @media only screen and (max-width: 455px) {
   #nav-bar {
     grid-template-columns: 1fr;
@@ -334,25 +353,36 @@ body {
   }
 
   .nav-element {
+    width: 100%;
+    text-align: center;
     font-size: 12px;
     font-weight: 800;
     padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .title {
-    font-size: 20px;
+    width: 100%;
+    font-size: 19px;
     text-align: center;
     padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  #homeimg1{
+  #bar-button {
+    width: 100%;
+  }
+
+  #homeimg1 {
     text-align: center;
     width: 100%;
     height: 500px;
     object-fit: cover;
   }
 
-  .home1{
+  .home1 {
     display: none;
   }
 
@@ -372,7 +402,7 @@ body {
   .hightxt1 {
     font-size: 25px;
   }
-  
+
   .year-button {
     padding-top: 15%;
     font-size: 20px;
@@ -383,77 +413,84 @@ body {
     height: auto;
   }
 
-  .glimpses{
+  .glimpses {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr;
   }
 
-  .head-text{
+  .head-text {
     font-size: 40px;
     font-weight: 400;
-    text-shadow: none;
+    text-shadow: 0.1px solid black;
   }
 
-  .pad1{
+  .pad1 {
     padding: 2%;
   }
 
-  .pad2{
+  .pad2 {
     padding: 2%;
   }
 
-  .head-text svg{
+  .head-text svg {
     width: 70px;
     height: 70px;
   }
 
-  #livestreams{
+  #livestreams {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
   }
 
-  .ytlink{
+  .ytlink {
     text-align: center;
+    width: 100%;
   }
 
-  .ytlink iframe{
+  .ytlink iframe {
     height: 200px;
-    width: 300px;
+    width: 320px;
   }
 
-  #loc-box{
+  #loc-box {
     height: 600px;
     border-radius: 0;
   }
 
-  #siri{
-    font-size: 30px;
-    font-weight: 400;
+  #siri {
+    font-size: 25px;
+    font-weight: 800;
     text-shadow: none;
+    padding: 2px;
   }
 
-  #siri2{
+  #siri2 {
     font-size: 15px;
   }
 
-  #loc-box2 iframe{
+  #loc-box2 iframe {
     height: 250px;
     width: 300px;
   }
 
-  .sewak-box{
+  #sewak-table-1 {
+    display: none;
+  }
+
+  .sewak-box {
     border-radius: 0;
-    background-color: rgba(212, 231, 247, 0.666) ;
+    background-color: rgba(212, 231, 247, 0.666);
+    padding: 20px;
   }
 
-  #sewak-head{
+  #sewak-head {
     font-size: 40px;
-    margin: 0;
+    margin: 0 0 15px 0;
   }
 
-  .sewak{
+  .sewak {
     margin: 0;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   #contact {
@@ -465,18 +502,25 @@ body {
     margin: 0;
     padding: 6%;
     width: 100%;
-
   }
 
-  .typewriter h1{
+  .typewriter h1 {
     font-size: 20px;
   }
 
-  .row{
+  .row {
+    width: 100%;
     padding: 0 10% 10% 10%;
+    margin: 0;
   }
 
-  .footer{
+  .footer {
     height: 150px;
+  }
+}
+
+@media only screen and (min-width: 455px) {
+  #sewak-table-2 {
+    display: none;
   }
 }
