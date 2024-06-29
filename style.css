@@ -11,7 +11,7 @@ body {
   /* top: 0px; */
   background-image: url(./assets/nb.jpg);
   display: grid;
-  grid-template-columns: 5fr 0.5fr 0.5fr 0.5fr 0.9fr 0.5fr;
+  grid-template-columns: 5fr 3.1fr;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -26,13 +26,28 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 800;
   font-size: 20px;
-  text-shadow: 2px 2px #0000;
   display: inline;
   padding: 20px;
 }
 
+.title {
+  font-size: 30px;
+  text-align: justify;
+  color: white;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+}
+
 .button:hover {
   background-color: rgba(255, 111, 0, 0.379);
+}
+
+#bar-button {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
 }
 
 .year-button {
@@ -105,6 +120,8 @@ body {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 700;
 }
 
 /* The typing effect */
@@ -125,5 +142,341 @@ body {
   }
   50% {
     border-color: orange;
+  }
+}
+
+#homeimg1 {
+  width: 100%;
+}
+
+#homeimg2 {
+  height: 400px;
+}
+
+.home1 {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.hometxt1 {
+  padding: 50px;
+  font-family: Yatra One, system-ui;
+  font-size: 80px;
+  color: white;
+  text-align: justify;
+}
+
+#hometxt2 {
+  font-size: 50px;
+}
+
+#highlights {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  background-color: rgba(240, 240, 240, 255);
+}
+
+.high1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 10%;
+  text-align: center;
+}
+
+.hightxt {
+  font-family: Playwrite AU QLD, cursive;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.hightxt1 {
+  font-size: 40px;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+#year-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.highimg {
+  height: 600px;
+}
+
+.glimpses {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(./assets/back_1.jpg);
+  background-size: contain;
+}
+
+.carousel {
+  padding: 6%;
+}
+
+.glimpsetxt {
+  padding: 6%;
+  text-align: center;
+}
+
+.pad1 {
+  padding: 15%;
+}
+
+#livestreams {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  background-image: url(./assets/back_2.jpg);
+  background-size: contain;
+}
+
+.livetxt {
+  padding: 6%;
+  text-align: center;
+}
+
+.pad2 {
+  padding: 6%;
+}
+
+.ytlink {
+  padding: 6%;
+}
+
+#siri2 {
+  font-family: Arvo, serif;
+  font-size: 20px;
+}
+
+#loc-box1 {
+  background-color: rgb(250, 235, 215);
+}
+
+#loc-box2 {
+  margin-top: 50px;
+}
+#shyam-sewak {
+  background-image: url(./assets/sbg.jpg);
+  background-size: cover;
+}
+
+.sewak-box {
+  background-color: rgba(212, 231, 247, 0.848);
+  border-radius: 400px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#sewak-box2 {
+  text-align: center;
+  color: black;
+}
+
+#contact {
+  background-image: url(./assets/nb.jpg);
+  background-size: contain;
+}
+
+.typewriter {
+  margin: 0 5% 0 5%;
+  padding: 5% 5% 3% 0;
+  width: 50%;
+}
+
+.row {
+  padding: 3% 5%;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer11 {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.footer12 {
+  text-align: right;
+  padding-right: 10%;
+}
+
+.icon {
+  color: white;
+}
+
+#creator {
+  text-align: left;
+  padding-left: 5%;
+}
+
+@media only screen and (max-width: 455px) {
+  #nav-bar {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .nav-element {
+    font-size: 12px;
+    font-weight: 800;
+    padding-top: 5px;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #homeimg1{
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .home1{
+    display: none;
+  }
+
+  #highlights {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .high1 {
+    padding: 8%;
+  }
+
+  .hightxt {
+    font-size: 40px;
+  }
+
+  .hightxt1 {
+    font-size: 25px;
+  }
+  
+  .year-button {
+    padding-top: 15%;
+    font-size: 20px;
+  }
+
+  .highimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .glimpses{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+  }
+
+  .head-text{
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: none;
+  }
+
+  .pad1{
+    padding: 2%;
+  }
+
+  .pad2{
+    padding: 2%;
+  }
+
+  .head-text svg{
+    width: 70px;
+    height: 70px;
+  }
+
+  #livestreams{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .ytlink{
+    text-align: center;
+  }
+
+  .ytlink iframe{
+    height: 200px;
+    width: 300px;
+  }
+
+  #loc-box{
+    height: 600px;
+    border-radius: 0;
+  }
+
+  #siri{
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: none;
+  }
+
+  #siri2{
+    font-size: 15px;
+  }
+
+  #loc-box2 iframe{
+    height: 250px;
+    width: 300px;
+  }
+
+  .sewak-box{
+    border-radius: 0;
+    background-color: rgba(212, 231, 247, 0.666) ;
+  }
+
+  #sewak-head{
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .sewak{
+    margin: 0;
+    font-size: 10px;
+  }
+
+  #contact {
+    background-image: url(./assets/nb.jpg);
+    background-size: cover;
+  }
+
+  .typewriter {
+    margin: 0;
+    padding: 6%;
+    width: 100%;
+
+  }
+
+  .typewriter h1{
+    font-size: 20px;
+  }
+
+  .row{
+    padding: 0 10% 10% 10%;
+  }
+
+  .footer{
+    height: 150px;
   }
 }
