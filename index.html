@@ -20,6 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Yatra+One&display=swap"
@@ -45,76 +49,64 @@
 
 <body>
   <header id="nav-bar">
-    <div class="nav-element" style="font-size: 30px; text-align: justify; color: white">
+    <div class="nav-element title">
       SHREE SHYAM SEWAK YUVA MANDAL
     </div>
 
-    <a class="nav-element button" style="text-decoration: none; color: white" href="#home">
-      <div>Home</div>
-    </a>
-    <a class="nav-element button" style="text-decoration: none; color: white" href="#location">
-      <div>Location</div>
-    </a>
+    <div id="bar-button">
+      <a class="nav-element button" href="#home">
+        <div>Home</div>
+      </a>
+      <a class="nav-element button" href="#location">
+        <div>Location</div>
+      </a>
 
-    <a class="nav-element button" style="text-decoration: none; color: white" href="#highlights">
-      <div>Highlights</div>
-    </a>
+      <a class="nav-element button" href="#highlights">
+        <div>Highlights</div>
+      </a>
 
-    <a class="nav-element button" style="text-decoration: none; color: white" href="#shyam-sewak">
-      <div>Shyam Sewak</div>
-    </a>
+      <a class="nav-element button" href="#shyam-sewak">
+        <div>Shyam Sewak</div>
+      </a>
 
-    <a class="nav-element button" style="text-decoration: none; color: white" href="#contact">
-      <div>Contact</div>
-    </a>
+      <a class="nav-element button" href="#contact">
+        <div>Contact</div>
+      </a>
+    </div>
+
   </header>
 
   <section id="home">
-    <img style="width: 100% " src="./assets/main.png" alt="" />
-    <div style="
-          position: absolute;
-          top: 20%;
-          width: 100%;
-          display: grid;
-          grid-template-columns: 2.5fr 1fr;
-        ">
-      <div><img style="height: 400px" src="./assets/1.png" alt="" /></div>
-      <div style="
-            padding: 50px;
-            font-family: Yatra One, system-ui;
-            font-size: 80px;
-            color: white;
-            text-align: justify;
-          ">
+    <img id="homeimg1" src="./assets/main.png" alt="" />
+    <div class="home1">
+      <div><img id="homeimg2" src="./assets/1.png" alt="" /></div>
+      <div class="hometxt1">
         श्री श्याम<br />सेवक युवा<br />मंडल
-        <div style="font-size: 50px">(रजि.)<br />संगम विहार</div>
+        <div id="hometxt2">(रजि.)<br />संगम विहार</div>
       </div>
     </div>
   </section>
 
-  <section id="highlights"
-    style="display: grid; grid-template-columns: 2.2fr 1fr; background-color: rgba(240,240,240,255);">
-    <div style="display: grid; grid-template-rows: 1fr 1fr 1fr; padding: 10%; text-align: center;">
-      <div style="font-family: Playwrite AU QLD, cursive; font-weight: 400; font-size: 60px;"><b>A Timeless Journey</b>
-      </div>
-      <div style="font-size: 40px;">Choose the year to relive the moments</div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; text-align: center;">
-        <a class="year-button" href="./2023" target="_main">
+  <section id="highlights">
+    <div class="high1">
+      <div class="hightxt"><b>A Timeless Journey</b></div>
+      <div class="hightxt1">Choose the year to relive the moments</div>
+      <div id="year-buttons">
+        <a class="year-button" href="./2023.html" target="_main">
           <div><b>Year 2023</b></div>
         </a>
         <div></div>
-        <a class="year-button" href="./2022" target="_main">
+        <a class="year-button" href="./2022.html" target="_main">
           <div><b>Year 2022</b></div>
         </a>
       </div>
     </div>
-    <div><img src="./assets/collage1.jpg" alt="" height="600px"></div>
+    <div><img class="highimg" src="./assets/collage1.jpg" alt=""></div>
   </section>
 
 
-  <section
-    style="width: 100%; display: grid; grid-template-columns: 1fr 1fr; background-image: url(./assets/back_1.jpg); background-size: contain;">
-    <div style="padding: 6%;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <section class="glimpses">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="./assets/g1.JPG" class="d-block w-100" alt="...">
@@ -147,16 +139,15 @@
       </button>
     </div>
 
-    <div style="padding: 6%; text-align: center; ">
-      <p class="head-text" style="padding: 15%;">
+    <div class="glimpsetxt">
+      <p class="head-text pad1">
         SOME GLIMPSES</p>
     </div>
   </section>
 
-  <section
-    style="width: 100%; display: grid; grid-template-columns: 1fr 1.2fr; background-image: url(./assets/back_2.jpg); background-size: contain; ">
-    <div style="padding: 6%; text-align: center; ">
-      <p class="head-text" style="padding: 6%;">
+  <section id="livestreams">
+    <div class="livetxt">
+      <p class="head-text pad2">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-youtube"
           viewBox="0 0 16 16">
           <path
@@ -165,7 +156,7 @@
       </p>
     </div>
 
-    <div style="padding: 6%;"><iframe width="750" height="450" src="https://www.youtube.com/embed/srXQ59jF9uY"
+    <div class="ytlink"><iframe height="450" width="750" src="https://www.youtube.com/embed/srXQ59jF9uY"
         title="🅻🅸🆅🅴 : 5 वां श्री श्याम रंग रंगीला फाल्गुन महोत्सव : 18 फरवरी 2024 । सीरी फोर्ट ग्रीन पार्क"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -174,15 +165,15 @@
 
   <section id="location">
     <div id="loc-box">
-      <div style="background-color: rgb(250, 235, 215)">
+      <div id="loc-box1">
         <p id="siri">SIRIFORT AUDITORIUM - I</p>
-        <p style="font-family: Arvo, serif; font-size: 20px">
+        <p id="siri2">
           Siri Fort Auditorium, H637+854, August Kranti Marg, Siri
           Institutional Area, Siri Fort Institutional Area, Siri Fort, New
           Delhi, Delhi 110049
         </p>
       </div>
-      <div style="margin-top: 50px">
+      <div id="loc-box2">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.549133321734!2d77.21037047481917!3d28.55326868767699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce214b9b5cb45%3A0x4ce16a50567e0747!2sSiri%20Fort%20Auditorium!5e0!3m2!1sen!2sin!4v1719069062958!5m2!1sen!2sin"
           width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
@@ -191,12 +182,10 @@
     </div>
   </section>
 
-  <section id="shyam-sewak" style="background-image: url(./assets/sbg.jpg); background-size:cover;">
-    <div
-      style="background-color: rgba(212, 231, 247, 0.848); border-radius: 400px; padding-top: 50px; padding-bottom: 50px;">
-      <div id="sewak-head">~: श्याम सेवक :~
-      </div>
-      <div style="text-align: center; color: black;">
+  <section id="shyam-sewak">
+    <div class="sewak-box">
+      <div id="sewak-head">~: श्याम सेवक :~</div>
+      <div id="sewak-box2">
         <pre
           class="sewak">तरुण बडगुजर     संदीप गुप्ता     पंकज शर्मा      मोहित राजपूत    रवि रंजन दुबे    दिलीप शेखावत</pre>
         <pre
@@ -206,7 +195,7 @@
         <pre
           class="sewak">नवीन गोयल       नरेश अग्रवाल     महेश कुमार       हन्नी         उत्तम यादव      नितेश शर्मा</pre>
         <pre
-          class="sewak">जतिन      अशोक मौर्या    प्रमोद कुमार यादव    जन्मेजय कुमार    चन्दन गुप्ता    शिव कुमार गुप्ता</pre>
+          class="sewak">    जतिन       अशोक मौर्या    प्रमोद कुमार यादव    जन्मेजय कुमार    चन्दन गुप्ता    शिव कुमार गुप्ता</pre>
         <pre
           class="sewak">रोहित द्विवेदी      विशाल अग्रवाल     जतिन गोयल    आनंद यादव     विनय अग्रवाल    कुंवर नागपाल</pre>
         <pre
@@ -219,12 +208,12 @@
     </div>
   </section>
 
-  <section id="contact" style="background-image: url(./assets/nb.jpg); background-size: contain;">
-    <div style="margin: 0 5% 0 5%; padding: 5% 5% 3% 0; width: 50%;" class="typewriter">
-      <h1 style="font-family: Roboto Condensed, sans-serif; font-weight: 700;">CONTACT US FOR ANY QUERY</h1>
+  <section id="contact">
+    <div class="typewriter">
+      <h1>CONTACT US FOR ANY QUERY</h1>
     </div>
 
-    <div style="padding: 3% 5%;" class="row">
+    <div class="row">
       <div class="col-sm-3 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
@@ -234,7 +223,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Tarun Badgujar</h4>
@@ -264,23 +253,24 @@
     </div>
   </section>
 
-  <footer style="width: 100%; height: 80px; text-align: center; background-color: black; color: white; padding: 5px;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-      <p style="text-align: left; padding-left: 10%;">Copyright @ Shree Shyam Sewak Yuva Mandal</p>
-      <div style="text-align: right; padding-right: 10%;">
-        <a style="color: white;" href="https://www.youtube.com/@shyamdeewanedeepak6022"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube"
-          viewBox="0 0 16 16">
-          <path
-            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-        </svg></a>
-        <a style="color: white;" href="https://www.instagram.com/shree_shyam_sewak_yuva_mandal/"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-        </svg></a>
+  <footer class="footer">
+    <div class="footer1">
+      <p class="footer11">Copyright @ Shree Shyam Sewak Yuva Mandal</p>
+      <div class="footer12">
+        <a class="icon" href="https://www.youtube.com/@shyamdeewanedeepak6022"><svg xmlns="http://www.w3.org/2000/svg"
+            width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+          </svg></a>
+        <a class="icon" href="https://www.instagram.com/shree_shyam_sewak_yuva_mandal/"><svg
+            xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg></a>
       </div>
     </div>
-    <p style="text-align: left; padding-left: 5%;">Created By : Aayush Kansal, Rohit Aggarwal, Anubhav Singh</p>
+    <p id="creator">Created By : Aayush Kansal, Rohit Aggarwal, Anubhav Singh</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
