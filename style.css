@@ -400,7 +400,8 @@ body {
     text-align: center;
     font-size: 30px;
     justify-content:end;
-    padding-top: 390px;
+    padding-top: 380px;
+    text-shadow: 1px 1px 2px black;
   }
 
   #hometxt2-2 {
