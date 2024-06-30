@@ -383,7 +383,28 @@ body {
   }
 
   .home1 {
+    grid-template-columns: 1fr;
+  }
+
+  #homeimg2 {
     display: none;
+  }
+
+  .hometxt1 {
+    display: none;
+  }
+
+  .hometxt1-2 {
+    font-family: Yatra One, system-ui;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    justify-content:end;
+    padding-top: 400px;
+  }
+
+  #hometxt2-2 {
+    font-size: 20px;
   }
 
   #highlights {
@@ -521,6 +542,10 @@ body {
 
 @media only screen and (min-width: 455px) {
   #sewak-table-2 {
+    display: none;
+  }
+
+  .hometxt1-2{
     display: none;
   }
 }
